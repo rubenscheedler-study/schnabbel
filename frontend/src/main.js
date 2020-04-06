@@ -3,10 +3,15 @@ import App from './App.vue'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import VueRouter from 'vue-router'
+import ApplicationRouter from './routes/router.js'
 
+Vue.use(VueRouter)
 Vue.use(BootstrapVue)
+
 Vue.config.productionTip = false
 
 new Vue({
+  router:ApplicationRouter,
   render: h => h(App),
 }).$mount('#app')

@@ -23,6 +23,10 @@
                 </b-nav-form>
                 <b-nav-item-dropdown right>
                   <!-- Using 'button-content' slot -->
+                  <router-link to="/home">Home</router-link>
+                  <router-link to="/login">Login</router-link>
+                  <router-link to="/about">About</router-link>
+
                   <template slot="button-content"><em>User</em></template>
                   <b-dropdown-item href="#">Profile</b-dropdown-item>
                   <b-dropdown-item href="#">Sign Out</b-dropdown-item>
